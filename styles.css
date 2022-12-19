@@ -5,6 +5,8 @@
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(0, 0%, 81%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+  /* --light-70: hsla(0, 0%, 81%, 0.7);
+  --light-50: hsl(0, 0%, 81%, 0.5); */
 }
 
 /* RESET */
@@ -53,4 +55,79 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  color: var(--white);
+  background-color: var(--light-grayish-blue);
+}
+
+.testimonial-reviews {
+  display: grid;
+  padding: 4.5rem 1.65rem;
+  gap: 1.65rem;
+}
+
+.testimonial-card {
+  box-shadow: 3px 3px 10px hsla(217, 30%, 14%, 0.281);
+  border-radius: 10px;
+  padding: 1.95rem;
+}
+
+.testimonial-author {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.testimonial-avatar {
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--light-gray);
+}
+
+.testimonial-author-info {
+  line-height: 1rem;
+  margin-left: 1rem;
+}
+
+.testimonial-author-name {
+  font-size: 0.85rem;
+}
+
+.testimonial-verified {
+  font-size: 0.75rem;
+  opacity: 50%;
+}
+
+.testimonial-lg {
+  font-size: 1.24rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.95rem;
+}
+
+.testimonial-sm {
+  opacity: 70%;
+  font-size: 0.85rem;
+
+  line-height: 1rem;
+}
+
+.card-daniel {
+  background-color: var(--moderate-violet);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top 0%;
+}
+
+.card-jonathan {
+  background-color: var(--grayish-blue);
+}
+
+.card-patrick {
+  background-color: var(--blackish-blue);
+}
+
+.card-jeanette,
+.card-kira {
+  background-color: var(--white);
+  color: var(--grayish-blue);
 }
