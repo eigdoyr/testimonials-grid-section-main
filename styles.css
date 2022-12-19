@@ -63,6 +63,7 @@ body {
   display: grid;
   padding: 4.5rem 1.65rem;
   gap: 1.65rem;
+  max-width: 1138px;
 }
 
 .testimonial-card {
@@ -81,6 +82,10 @@ body {
   width: 30px;
   height: 30px;
   border: 2px solid var(--light-gray);
+}
+
+.card-patrick .testimonial-avatar {
+  border: 2px solid var(--moderate-violet);
 }
 
 .testimonial-author-info {
@@ -107,7 +112,6 @@ body {
 .testimonial-sm {
   opacity: 70%;
   font-size: 0.85rem;
-
   line-height: 1rem;
 }
 
@@ -130,4 +134,35 @@ body {
 .card-kira {
   background-color: var(--white);
   color: var(--grayish-blue);
+}
+
+.testimonial-card:hover {
+  transform: scale(1.03);
+  transition: 400ms linear;
+}
+
+@media (width >=1024px) {
+  .testimonial-reviews {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+
+  .card-daniel {
+    grid-area: daniel;
+    background-position: right 18% top 0%;
+  }
+  .card-jonathan {
+    grid-area: jonathan;
+  }
+  .card-kira {
+    grid-area: kira;
+  }
+  .card-jeanette {
+    grid-area: jeanette;
+  }
+  .card-patrick {
+    grid-area: patrick;
+  }
 }
